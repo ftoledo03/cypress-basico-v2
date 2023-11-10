@@ -40,7 +40,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
 
     })
 
-    it.only('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', function () {
+    it('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', function () {
         cy.get('#firstName').type('Jorge Fernando')
         cy.get('#lastName').type('Toledo')
         cy.get('#email').type('jftoledoqa@gmail,com')
